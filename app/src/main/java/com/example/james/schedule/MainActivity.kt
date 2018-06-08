@@ -8,14 +8,7 @@ import android.os.PersistableBundle
 import android.support.v4.content.ContextCompat.startActivity
 import android.support.v7.app.AppCompatActivity
 import android.widget.Button
-import android.widget.Toast
-import android.view.ViewGroup
-import android.view.LayoutInflater
-import android.view.View
-import android.R.menu
-import android.content.DialogInterface
-import android.view.Menu
-import com.example.james.schedule.R.layout.activity_main
+
 
 
 
