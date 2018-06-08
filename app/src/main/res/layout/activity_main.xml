@@ -12,20 +12,19 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
-
         <Button
-            android:layout_width="76dp"
+            android:layout_width="89dp"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="44dp"
+
             android:layout_weight="1"
             android:text="Add to current week" />
+
     <Button
         android:layout_weight="1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="44dp"
         android:text="Update" />
-</LinearLayout>
+    </LinearLayout>
 
     <LinearLayout
         android:layout_width="300dp"
@@ -39,6 +38,13 @@
             android:layout_height="320dp">
 
         </CalendarView>
+
     </LinearLayout>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="135dp"
+        android:text="My Schedule"
+        />
 
 </LinearLayout>
