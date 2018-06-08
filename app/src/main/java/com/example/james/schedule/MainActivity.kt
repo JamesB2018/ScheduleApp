@@ -32,7 +32,7 @@ class MainActivity : AppCompatActivity() {
         val button = findViewById<Button>(R.id.Button1)
 
 
-
+        //sets button to intent which directs it to --> SchedulePage
         button.setOnClickListener( {
             button.setOnClickListener{
                 startActivity(Intent(this@MainActivity, SchedulePage::class.java))
