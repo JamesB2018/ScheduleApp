@@ -14,4 +14,6 @@
     <color name="purple">#800080</color>
     <color name="maroon">#800000</color>
     <color name="aqua">#00FFFF</color>
+    <color name="Cyan">#00FFFF</color>
+    <color name="DarkCyan">#008B8B</color>
 </resources>
