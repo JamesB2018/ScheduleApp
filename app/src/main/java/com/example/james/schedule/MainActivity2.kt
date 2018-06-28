@@ -20,7 +20,7 @@ class MainActivity2 : AppCompatActivity() {
         setContentView(R.layout.activity_main2)
 
 
-        setupUIViews()
+        setupUIViews() //calls the UIViews into onCreate to start at run-time
         initToolbar()
         setupListView()
     }
@@ -60,14 +60,10 @@ class MainActivity2 : AppCompatActivity() {
     }
 
     inner class SimpleAdapter(private val mContext: Context, private val titleArray: Array<String>, private val descriptionArray: Array<String>) : BaseAdapter() {
-        private val layoutInflater: LayoutInflater
+        private val layoutInflater: LayoutInflater = LayoutInflater.from(mContext) //set layoutInflator variable and set to the context passed in parameter
         private var title: TextView? = null
         private var description: TextView? = null
         private var imageView: ImageView? = null
-
-        init {
-            layoutInflater = LayoutInflater.from(mContext)
-        }
 
 
         override fun getCount(): Int {
