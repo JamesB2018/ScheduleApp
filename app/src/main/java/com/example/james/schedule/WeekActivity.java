@@ -8,6 +8,7 @@ import android.text.Layout;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.support.v7.widget.Toolbar;
@@ -45,6 +46,23 @@ public class WeekActivity extends AppCompatActivity {
         String[] week = getResources().getStringArray(R.array.Week);
 
         WeekAdapter adapter = new WeekAdapter(this, R.layout.main_activity_single, week); //might be a different layout here
+
+        listView.setAdapter(adapter); // calls weekAdapter to the listview
+
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                switch(position){
+                    case 0: break;
+                    case 1: break;
+                    case 2: break;
+                    case 3: break;
+                    case 4: break;
+                    case 5: break;
+                    default:break;
+                }
+            }
+        });
     }
     public class WeekAdapter extends ArrayAdapter{
         private int resource;
