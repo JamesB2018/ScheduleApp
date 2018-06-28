@@ -14,9 +14,7 @@ import android.widget.ListView;
 import android.support.v7.widget.Toolbar;
 import android.widget.TextView;
 
-import org.jetbrains.annotations.NotNull;
-import org.jetbrains.annotations.Nullable;
-import org.w3c.dom.Text;
+
 
 public class WeekActivity extends AppCompatActivity {
 
