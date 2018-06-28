@@ -59,6 +59,7 @@ public class WeekActivity extends AppCompatActivity {
                     case 3: break;
                     case 4: break;
                     case 5: break;
+                    case 6: break;
                     default:break;
                 }
             }
@@ -88,6 +89,8 @@ public class WeekActivity extends AppCompatActivity {
             }else{
                 holder = (ViewHolder)convertView.getTag();
             }
+            holder.ivLogo.setOval(true);
+            holder.ivLogo.setLetter(week[position].charAt(0)); //makes sure each day of the week is set the first letter of its name
             return convertView;
         }
         class ViewHolder{
