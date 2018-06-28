@@ -26,13 +26,13 @@ class MainActivity2 : AppCompatActivity() {
     }
 
     private fun setupUIViews() {
-        toolbar = findViewById(R.id.ToolbarMain) as? Toolbar
+        toolbar = findViewById(R.id.ToolbarMain) as? Toolbar //set toolbar to find id and cast as? so no null occurs
         listView = findViewById(R.id.lvMain) as? ListView
     }
 
     private fun initToolbar() {
-        setSupportActionBar(toolbar)
-        supportActionBar!!.title = "Schedule App"
+        setSupportActionBar(toolbar) //casting custom toolbar to the supportActionbar
+        supportActionBar!!.title = "Schedule App" //custom set title in app
     }
 
     private fun setupListView() {
@@ -60,7 +60,7 @@ class MainActivity2 : AppCompatActivity() {
     }
 
     inner class SimpleAdapter(private val mContext: Context, private val titleArray: Array<String>, private val descriptionArray: Array<String>) : BaseAdapter() {
-        private val layoutInflater: LayoutInflater = LayoutInflater.from(mContext) //set layoutInflator variable and set to the context passed in parameter
+        private val layoutInflater: LayoutInflater = LayoutInflater.from(mContext) //set layoutInflator variable and initalizing it
         private var title: TextView? = null
         private var description: TextView? = null
         private var imageView: ImageView? = null
