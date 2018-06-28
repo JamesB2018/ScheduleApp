@@ -8,12 +8,13 @@ import android.os.PersistableBundle
 import android.support.v4.content.ContextCompat.startActivity
 import android.support.v7.app.AppCompatActivity
 import android.widget.Button
-
-
-
+import android.provider.CalendarContract
+import android.widget.TextView
 
 
 class MainActivity : AppCompatActivity() {
+
+
 
 
     public override fun onCreate(savedInstanceState: Bundle?) {
@@ -24,16 +25,16 @@ class MainActivity : AppCompatActivity() {
         // Locate the button in activity_main.xml
         val button = findViewById<Button>(R.id.Button1)
 
-
         //sets button to intent which directs it to --> SchedulePage
         button.setOnClickListener( {
             button.setOnClickListener{
                 startActivity(Intent(this@MainActivity, SchedulePage::class.java))
-            }
 
+            }
 
             })
         }
+
 
 }
 

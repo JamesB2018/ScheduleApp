@@ -3,7 +3,9 @@ package com.example.james.schedule
 import android.app.Fragment
 import android.content.Context
 import android.content.Intent
+import android.nfc.Tag
 import android.os.Bundle
+import android.os.PersistableBundle
 import android.support.v7.app.AppCompatActivity
 import android.util.Log
 import android.view.LayoutInflater
@@ -47,4 +49,11 @@ class SchedulePage : AppCompatActivity(), View.OnClickListener {
         textViewMessage.text = "Your schedule is $peach"
 
     }
+
+    override fun onSaveInstanceState(outState: Bundle?, outPersistentState: PersistableBundle?) {
+        super.onSaveInstanceState(outState, outPersistentState)
+       // outState?.putString("textKey", editText.getText().toString())
+    }
+
+
 }
