@@ -24,7 +24,12 @@
             <meta-data android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MainActivity"/>
         </activity>
-        <activity android:name=".WeekActivity">
+        <activity android:name=".WeekActivity"
+            android:launchMode="singleTop">
+
+        </activity>
+        <activity android:name=".MainActivity2"
+            android:launchMode="singleTop">
 
         </activity>
 

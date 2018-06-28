@@ -30,6 +30,7 @@ public class WeekActivity extends AppCompatActivity {
 
         setupUIView();
         initToolbar();
+        setupListView();
     }
 
     private void setupUIView(){
@@ -40,6 +41,7 @@ public class WeekActivity extends AppCompatActivity {
     private void initToolbar(){
         setSupportActionBar(toolbar);
         getSupportActionBar().setTitle("Week");
+
     }
 
     private void setupListView(){
@@ -91,6 +93,7 @@ public class WeekActivity extends AppCompatActivity {
             }
             holder.ivLogo.setOval(true);
             holder.ivLogo.setLetter(week[position].charAt(0)); //makes sure each day of the week is set the first letter of its name
+            holder.tvWeek.setText(week[position]);
             return convertView;
         }
         class ViewHolder{

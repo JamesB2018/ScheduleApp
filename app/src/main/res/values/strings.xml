@@ -1,9 +1,10 @@
 <resources>
     <string name="app_name">Schedule</string>
-<string-array name = "Main">
     <string name="Button">Button</string>
     <string name="Button2">Button2</string>
-    <string name="textKey">textKey</string>
+<string-array name = "Main">
+
+
 </string-array>
     
     <string-array name="Week">
@@ -14,6 +15,13 @@
         <item> Friday </item>
         <item> Saturday </item>
         <item> Sunday </item>
+    </string-array>
+
+    <string-array name="Description">
+        <item> Description 1 </item>
+        <item> Description 2 </item>
+        <item> Description 3 </item>
+        <item> Description 4 </item>
     </string-array>
 
 </resources>
