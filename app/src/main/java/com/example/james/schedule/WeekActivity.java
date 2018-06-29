@@ -32,8 +32,8 @@ public class WeekActivity extends AppCompatActivity {
     }
 
     private void setupUIView(){
-        toolbar = (Toolbar)findViewById(R.id.ToolbarWeek);
-        listView = (ListView)findViewById(R.id.lvWeek);
+        toolbar = findViewById(R.id.ToolbarWeek); //set toolbar = to my id called ToolbarWeek in xml
+        listView = findViewById(R.id.lvWeek);
     }
 
     private void initToolbar(){
