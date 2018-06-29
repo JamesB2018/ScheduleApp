@@ -83,7 +83,7 @@ public class WeekActivity extends AppCompatActivity {
             if(convertView == null){
                 holder = new ViewHolder();
                 convertView = layoutInflater.inflate(resource, null);
-                holder.ivLogo = (LetterImageView)convertView.findViewById(R.id.ivLetter);
+                holder.ivLogo = convertView.findViewById(R.id.ivLetter);
                 holder.tvWeek = convertView.findViewById(R.id.tvMain); //not sure about id?
                 convertView.setTag(holder);
             }else{
