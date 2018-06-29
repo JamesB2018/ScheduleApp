@@ -84,7 +84,7 @@ public class WeekActivity extends AppCompatActivity {
                 holder = new ViewHolder();
                 convertView = layoutInflater.inflate(resource, null);
                 holder.ivLogo = (LetterImageView)convertView.findViewById(R.id.ivLetter);
-                holder.tvWeek = (TextView)convertView.findViewById(R.id.tvMain); //not sure about id?
+                holder.tvWeek = convertView.findViewById(R.id.tvMain); //not sure about id?
                 convertView.setTag(holder);
             }else{
                 holder = (ViewHolder)convertView.getTag();
@@ -95,7 +95,7 @@ public class WeekActivity extends AppCompatActivity {
             return convertView;
         }
         class ViewHolder{
-            private LetterImageView ivLogo;
+            private LetterImageView ivLogo; //declares LetterImage View for myViewHolder in getView class
             private TextView tvWeek;
 
 
