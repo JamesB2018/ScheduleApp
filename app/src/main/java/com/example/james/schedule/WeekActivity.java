@@ -91,7 +91,7 @@ public class WeekActivity extends AppCompatActivity {
             }
             holder.ivLogo.setOval(true);
             holder.ivLogo.setLetter(week[position].charAt(0)); //makes sure each day of the week is set the first letter of its name
-            holder.tvWeek.setText(week[position]);
+            holder.tvWeek.setText(week[position]); //sets the position of the text to the left for each day of the week
             return convertView;
         }
         class ViewHolder{
