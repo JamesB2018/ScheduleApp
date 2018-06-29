@@ -9,7 +9,7 @@
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
     </style>
-    <style name="CalenderViewCustom" parent="@android:style/Theme.DeviceDefault.Light.DarkActionBar">
+    <style name="CalenderViewCustom" parent="Theme.AppCompat.Light.DarkActionBar">
         <item name="colorAccent">@color/lime</item>
     </style>
 

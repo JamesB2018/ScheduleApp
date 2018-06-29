@@ -4,7 +4,6 @@ import android.content.Context;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
-import android.text.Layout;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -68,7 +67,7 @@ public class WeekActivity extends AppCompatActivity {
     public class WeekAdapter extends ArrayAdapter{
         private int resource;
         private LayoutInflater layoutInflater;
-        private String[] week = new String[]{};
+        private String[] week; 
 
         public WeekAdapter(Context context, int resource, String[] objects){
             super(context, resource, objects);
