@@ -1,5 +1,6 @@
 package com.example.james.schedule
 
+import android.annotation.SuppressLint
 import android.content.Context
 import android.content.Intent
 import android.support.v7.app.AppCompatActivity
@@ -43,7 +44,7 @@ class MainActivity2 : AppCompatActivity() {
         val simpleAdapter = SimpleAdapter(this, title, description)
         listView!!.adapter = simpleAdapter
 
-        listView!!.onItemClickListener = AdapterView.OnItemClickListener { parent, view, position, id ->
+        listView!!.onItemClickListener = AdapterView.OnItemClickListener { parent, _, position, id ->
             when (position) {
                 0 -> {
                     val intent = Intent(this@MainActivity2, WeekActivity::class.java)
@@ -59,7 +60,7 @@ class MainActivity2 : AppCompatActivity() {
         }
     }
 
-    inner class SimpleAdapter(private val mContext: Context, private val titleArray: Array<String>, private val descriptionArray: Array<String>) : BaseAdapter() {
+    inner class SimpleAdapter(mContext: Context, private val titleArray: Array<String>, private val descriptionArray: Array<String>) : BaseAdapter() {
         private val layoutInflater: LayoutInflater = LayoutInflater.from(mContext) //set layoutInflator variable and initalizing it
         private var title: TextView? = null
         private var description: TextView? = null
@@ -78,6 +79,7 @@ class MainActivity2 : AppCompatActivity() {
             return position.toLong()
         }
 
+        @SuppressLint("InflateParams")
         override fun getView(position: Int, convertView: View?, parent: ViewGroup): View {
             var convertView = convertView
             if (convertView == null) {
