@@ -93,7 +93,7 @@ class MainActivity2 : AppCompatActivity() {
             title!!.text = titleArray[position]
             description!!.text = descriptionArray[position]
 
-            if (titleArray[position].equals("Timetable", ignoreCase = true)) {
+          /*  if (titleArray[position].equals("Timetable", ignoreCase = true)) {
                 imageView!!.setImageResource(R.drawable.timetable)
             } else if (titleArray[position].equals("Subjects", ignoreCase = true)) {
                 imageView!!.setImageResource(R.drawable.book)
@@ -101,7 +101,7 @@ class MainActivity2 : AppCompatActivity() {
                 imageView!!.setImageResource(R.drawable.contact)
             } else {
                 imageView!!.setImageResource(R.drawable.settings)
-            }
+            } */
 
             return convertView
 

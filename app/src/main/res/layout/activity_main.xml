@@ -17,7 +17,7 @@
             android:layout_width="89dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Add to current week" />
+            android:text="@string/add_to_current_week" />
 
     <Button
         android:layout_weight="1"
@@ -52,7 +52,6 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="135dp"
         android:text="My Schedule"
-        android:background="@color/silver"
         />
 
 

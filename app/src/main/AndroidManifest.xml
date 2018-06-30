@@ -32,7 +32,14 @@
             android:launchMode="singleTop">
 
         </activity>
+        <activity android:name=".DayFeatures"
+            android:launchMode="singleTop">
 
+        </activity>
+        <activity android:name=".Day_main"
+            android:launchMode="singleTop">
+
+        </activity>
 
 
     </application>

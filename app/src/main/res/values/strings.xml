@@ -2,7 +2,8 @@
     <string name="app_name">Schedule</string>
     <string name="Button">Button</string>
     <string name="Button2">Button2</string>
-<string-array name = "Main">
+    <string name="add_to_current_week">Add to current week</string>
+    <string-array name = "Main">
 
 
 </string-array>
@@ -15,6 +16,12 @@
         <item> Friday </item>
         <item> Saturday </item>
         <item> Sunday </item>
+    </string-array>
+
+    <string-array name="Monday">
+
+        <item>Fuck a single mom</item>
+
     </string-array>
 
     <string-array name="Description">
